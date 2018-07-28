@@ -12,5 +12,4 @@ import 'src/viewer/viewer_component.dart';
   directives: [ViewerComponent],
 )
 class AppComponent {
-  // Nothing here yet. All logic is in ViewerComponent.
 }

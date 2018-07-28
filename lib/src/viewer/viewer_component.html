@@ -1,5 +1,5 @@
-<div class="book">
-  <div *ngFor="let page of pages" class="page">
-    <img src="{{page}}" class="page-content">
+<div *ngIf="book != null" class="book">
+  <div *ngFor="let page of book.pages" class="page">
+    <img src="{{page.url}}" class="page-content">
   </div>
 </div>
