@@ -15,8 +15,9 @@ class ViewerService {
   Future<Book> getBook() async {
     try {
       final response = await _http.get("http://localhost:3100/books/3411.json");
-      final page = Page("");
       final book = Book((_extractData(response) as List).map((value) => Page(value.toString())).toList());
+      book.pages[0].visible = true;
+      book.pages[1].visible = true;
       return book;
     } catch(e) {
       print(e);

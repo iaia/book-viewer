@@ -12,22 +12,19 @@
   align-items: center;
 }
 .page {
-  display: none;
   margin: 0;
   padding: 0;
   height: 100%;
   max-height: 100%;
   max-width: 100%;
 }
-img.page-content {
+.page img.page-content {
+  display: none;
   width: auto;
   height: 100%;
   max-height: 100%;
   max-width: 100%;
 }
-.page:nth-child(1) {
-  display: initial;
-}
-.page:nth-child(2) {
+.page img.visible {
   display: initial;
 }

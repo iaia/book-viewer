@@ -12,6 +12,7 @@ import 'package:book_viewer/src/book/book.dart';
   directives: [
     NgIf,
     NgFor,
+    NgClass,
   ],
   providers: [const ClassProvider(ViewerService)],
 )
