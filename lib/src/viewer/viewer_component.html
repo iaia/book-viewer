@@ -1,5 +1,5 @@
 <div *ngIf="book != null" class="book">
   <div *ngFor="let page of book.pages" class="page">
-    <img src="{{page.url}}" [ngClass]="page.currentClasses">
+    <img src="{{page.url}}" [ngClass]="page.currentClasses" (click)="onClickPage(page)">
   </div>
 </div>
